@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-3" id="leftSidebar">
+                <div id="searchEntry">
+                    Search for a City:<br>
+                    <input type="text" id="searchField" name="searchField">
+                    <button type="button" class="btn btn-primary" id="searchBtn"><span class="fas fa-search"></span></button><br>
+                </div>
+                <div>
+                    <ul class="list-group" id="searchHistory">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-9" id="mainContent">
+                <div class="jumbotron" id="currentWeather">
+                    <div id="cityWithIcon">
+                        <h1 class="display-4" id="cityName"></h1>
+                        <img id="weatherIcon" src=""></img>
+                    </div>
+                    <p id="todaysDate"></p>
+                    <hr class="my-4">
+                    <p>Temperature: <span id="currentTemp"></span>&nbsp;&deg;F</p>
+                    <p>Humidity: <span id="currentHumidity"></span>&percnt;</p>
+                    <p>Wind Speed: <span id="currentWindSpeed"></span>&nbsp;MPH</p>
+                    <p>UV Index: <span id="currentUV"></span></p>
+                </div>
+                <div id="futureForecast">
+                    <h3>5-Day Forecast:</h3>
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body" id="forecast-0">
+                                <h5 class="card-title" id="date-0"></h5>
+                                <img id="weatherIcon-0"></img>
+                                <p class="card-text forcastTemp"></p>
+                                <p class="card-text" id="humidity-0"></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" id="forecast-1">
+                                <h5 class="card-title" id="date-1"></h5>
+                                <img id="weatherIcon-1"></img>
+                                <p class="card-text forcastTemp"></p>
+                                <p class="card-text" id="humidity-1"></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" id="forecast-2">
+                                <h5 class="card-title" id="date-2"></h5>
+                                <img id="weatherIcon-2"></img>
+                                <p class="card-text forcastTemp"></p>
+                                <p class="card-text" id="humidity-2"></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" id="forecast-3">
+                                <h5 class="card-title" id="date-3"></h5>
+                                <img id="weatherIcon-3"></img>
+                                <p class="card-text forcastTemp"></p>
+                                <p class="card-text" id="humidity-3"></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" id="forecast-4">
+                                <h5 class="card-title" id="date-4"></h5>
+                                <img id="weatherIcon-4"></img>
+                                <p class="card-text forcastTemp"></p>
+                                <p class="card-text" id="humidity-4"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="Assets/js/script.js"></script>
+</body>
+</html>

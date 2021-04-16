@@ -1,0 +1,90 @@
+header {
+    text-align: center;
+    background-color: #343a3f;
+    color: white;
+    border-radius: 0;
+    height: 60px;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+.container {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.forecastTemp, .card-title  {
+    margin-bottom: 0;
+}
+
+.container {
+    margin-top: 10px;
+}
+
+.card {
+    border-radius: 16px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.list-group {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.jumbotron {
+    border-radius: 16px;
+    border: 1px solid black;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+#leftSidebar {
+    background-color: aliceblue;
+    border-radius: 16px;
+}
+
+#cityName {
+    display: inline;
+}
+
+#cityWithIcon {
+    line-height: 80px;
+    height: 80px;
+}
+
+#weatherIcon {
+    display: inline;
+    height: 75px;
+    padding-bottom: 20px;
+}
+
+#todaysDate {
+    font-size: 1.5em;
+}
+
+#currentWeather p {
+    margin-bottom: 0;
+}
+
+#currentUV {
+    padding: 2px;
+}
+
+#searchField {
+    text-transform: capitalize;
+}
+
+#currentWeather {
+    display: none;
+}
+
+#futureForecast {
+    display: none;
+}
+
+
+
+
